@@ -32,8 +32,9 @@ class App extends React.Component {
                             ...userSnapshot.data(),
                         }
                     })
-                })
-                console.log(this.state.currentUser)
+                });
+
+                console.log(this.state)
             } else {
                 this.setState({currentUser: null,})
             }
